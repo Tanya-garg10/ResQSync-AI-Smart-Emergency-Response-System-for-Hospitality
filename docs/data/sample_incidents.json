@@ -1,0 +1,10 @@
+[
+  {"id": 3240, "type": "MEDICAL", "zone": "NODE-3240", "severity": "PRIORITY", "status": "ACTIVE", "timestamp": "04:45:11 PM", "lat": 28.6139, "lon": 77.2090},
+  {"id": 3027, "type": "MEDICAL", "zone": "NODE-3027", "severity": "PRIORITY", "status": "ACTIVE", "timestamp": "04:45:11 PM", "lat": 28.6142, "lon": 77.2088},
+  {"id": 8647, "type": "FIRE", "zone": "NODE-8647", "severity": "CRITICAL", "status": "ACTIVE", "timestamp": "04:45:10 PM", "lat": 28.6145, "lon": 77.2095},
+  {"id": 2336, "type": "SECURITY", "zone": "NODE-2336", "severity": "PRIORITY", "status": "ACTIVE", "timestamp": "04:45:09 PM", "lat": 28.6138, "lon": 77.2092},
+  {"id": 1892, "type": "FIRE", "zone": "NODE-1892", "severity": "CRITICAL", "status": "RESPONDING", "timestamp": "04:40:22 PM", "lat": 28.6141, "lon": 77.2091},
+  {"id": 4501, "type": "MEDICAL", "zone": "NODE-4501", "severity": "MODERATE", "status": "RESOLVED", "timestamp": "04:35:15 PM", "lat": 28.6140, "lon": 77.2093},
+  {"id": 7723, "type": "SECURITY", "zone": "NODE-7723", "severity": "LOW", "status": "RESOLVED", "timestamp": "04:30:00 PM", "lat": 28.6143, "lon": 77.2087},
+  {"id": 5510, "type": "MEDICAL", "zone": "NODE-5510", "severity": "PRIORITY", "status": "ACTIVE", "timestamp": "04:28:45 PM", "lat": 28.6135, "lon": 77.2085}
+]
