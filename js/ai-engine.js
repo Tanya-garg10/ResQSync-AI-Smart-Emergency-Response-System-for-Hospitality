@@ -2,9 +2,13 @@
    AI Engine – Classification + Groq AI Assistant
    ═══════════════════════════════════════════ */
 
-// 🔑 Groq API Key – Get free from https://console.groq.com/keys
-// Paste your key below, e.g.: const GROQ_API_KEY = 'gsk_your_key_here';
-const GROQ_API_KEY = '';
+// 🔑 Groq API Key – loaded from localStorage (user enters via Settings)
+function getGroqKey() {
+    return localStorage.getItem('resqsync_groq_key') || '';
+}
+function setGroqKey(key) {
+    localStorage.setItem('resqsync_groq_key', key);
+}
 
 const KEYWORDS = {
     FIRE: ['fire', 'smoke', 'burning', 'flames', 'aag', 'jalana', 'dhua', 'jal'],
@@ -72,7 +76,7 @@ const AIEngine = {
     // ── Groq API for AI Assistant (Free + Ultra Fast) ──
     async askGemini(question) {
         try {
-            if (!GROQ_API_KEY || GROQ_API_KEY === '') {
+            if (!getGroqKey()) {
                 console.warn('Groq API key not set, using offline mode');
                 return this.getOfflineResponse(question);
             }
@@ -81,7 +85,7 @@ const AIEngine = {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${GROQ_API_KEY}`,
+                    'Authorization': `Bearer ${getGroqKey()}`,
                 },
                 body: JSON.stringify({
                     model: 'llama-3.3-70b-versatile',

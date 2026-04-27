@@ -63,6 +63,7 @@ async function showPage(page) {
         case 'dashboard': renderDashboard(main); break;
         case 'assistant': renderAssistant(main); break;
         case 'analytics': renderAnalytics(main); break;
+        case 'settings': renderSettings(main); break;
     }
 }
 
