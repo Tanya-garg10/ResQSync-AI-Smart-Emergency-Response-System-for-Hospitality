@@ -9,8 +9,6 @@ Built with pure HTML/CSS/JS + Firebase + Groq AI + Leaflet Maps.
 ![Groq AI](https://img.shields.io/badge/AI-Groq_Llama_3.3_70B-00C853?style=for-the-badge)
 ![Speech API](https://img.shields.io/badge/Voice-Web_Speech_API-4285F4?style=for-the-badge)
 
----
-
 ## ✨ Features
 
 | Feature | Description |
@@ -28,8 +26,6 @@ Built with pure HTML/CSS/JS + Firebase + Groq AI + Leaflet Maps.
 | 🌐 Multi-Language | English & Hindi voice keyword detection |
 | 📡 Offline Fallback | Works without API keys using built-in knowledge base |
 
----
-
 ## 🛠️ Tech Stack
 
 | Layer | Technology |
@@ -41,8 +37,6 @@ Built with pure HTML/CSS/JS + Firebase + Groq AI + Leaflet Maps.
 | Maps | Leaflet.js + CartoDB Dark Tiles |
 | Icons | Google Material Icons |
 | Fonts | Inter + JetBrains Mono |
-
----
 
 ## 📁 Project Structure
 
@@ -67,8 +61,6 @@ resqsync-ai/
 └── data/
     └── sample_incidents.json
 ```
-
----
 
 ## 🚀 Quick Start
 
@@ -100,8 +92,6 @@ http://localhost:8080
 
 That's it! The app works immediately with demo data. Firebase and Groq enhance it with real-time sync and AI responses.
 
----
-
 ## 🔧 Firebase Setup (Optional)
 
 Firebase is pre-configured. To enable real-time data sync:
@@ -111,8 +101,6 @@ Firebase is pre-configured. To enable real-time data sync:
 3. **Authentication** → Sign-in method → Enable **Anonymous**
 
 Incidents will now save/load from Firestore automatically.
-
----
 
 ## 📸 Pages Overview
 
@@ -126,16 +114,10 @@ Incidents will now save/load from Firestore automatically.
 | 🤖 AI Assistant | Chat with Groq AI about emergency procedures |
 | 📈 Analytics | Bar charts + line graphs + donut chart + severity bars |
 
----
-
 ## 🎯 Use Case
 
-Designed for hackathons and demos — shows how AI can reduce emergency response time and improve coordination in hospitality settings.
+Designed for hackathons — shows how AI can reduce emergency response time and improve coordination in hospitality settings.
 
 **Demo-ready:** Works out of the box with zero configuration. Just open `index.html`.
 
----
-
-## 📄 License
-
-MIT
+**Build with ❤️**
