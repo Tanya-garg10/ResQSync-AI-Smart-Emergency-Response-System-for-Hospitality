@@ -81,3 +81,25 @@ def full_analysis(text: str) -> dict:
         "severity_score": severity["score"],
         "keywords_detected": severity["matched_keywords"],
     }
+
+
+def calculate_ai_severity_score(incident_type: str, severity_level: str) -> float:
+    """Return AI severity score out of 10 based on type and level."""
+    base = {
+        "CRITICAL": 8.5,
+        "PRIORITY": 6.5,
+        "MODERATE": 4.0,
+        "LOW": 2.0,
+    }.get(severity_level.upper(), 3.0)
+
+    type_bonus = {
+        "FIRE": 0.8,
+        "MEDICAL": 0.6,
+        "SECURITY": 0.5,
+        "UNKNOWN": 0.0,
+    }.get(incident_type.upper(), 0.0)
+
+    import random
+    jitter = round(random.uniform(-0.3, 0.4), 1)
+    score = min(10.0, round(base + type_bonus + jitter, 1))
+    return score
