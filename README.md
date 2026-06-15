@@ -1,123 +1,187 @@
 # 🚨 ResQSync AI – Smart Emergency Response System for Hospitality
 
-AI-powered emergency detection, classification, and coordinated response system for hotels, resorts, and large accommodation facilities.
+AI-powered real-time emergency detection, classification, and coordinated response system for hotels, resorts, and large hospitality environments.
 
-Built with pure HTML/CSS/JS + Firebase + Groq AI + Leaflet Maps.
+Built with **HTML/CSS/JS + Firebase + Groq AI + Leaflet Maps**, the system enables fast emergency reporting, AI-based classification, live responder tracking, and centralized incident management.
 
-![Dark Command Center UI](https://img.shields.io/badge/UI-Dark_Command_Center-0a0e14?style=for-the-badge)
-![Firebase](https://img.shields.io/badge/Firebase-Firestore_+_Auth-FFCA28?style=for-the-badge&logo=firebase)
-![Groq AI](https://img.shields.io/badge/AI-Groq_Llama_3.3_70B-00C853?style=for-the-badge)
-![Speech API](https://img.shields.io/badge/Voice-Web_Speech_API-4285F4?style=for-the-badge)
+## ✨ Core Features (Upgraded System)
 
-## ✨ Features
+### 🆘 Smart SOS Emergency System
 
-| Feature | Description |
-|---------|-------------|
-| 🆘 SOS Panic Button | One-tap emergency trigger with pulsing animation |
-| 🎙️ Voice Detection | Real-time speech-to-text with English + Hindi support |
-| 🧠 AI Classification | Auto-classify: Fire 🔥 Medical 🏥 Security 🚨 |
-| ⚡ Severity Scoring | CRITICAL / PRIORITY / MODERATE / LOW |
-| 🗺️ Live Tracking | Dark Leaflet map with responder ETA & routes |
-| 📊 Admin Dashboard | Filter, manage, resolve incidents in real-time |
-| 🤖 AI Assistant | Groq-powered chatbot for emergency guidance |
-| 📈 Analytics | 30-day trends, donut charts, severity breakdown |
-| 🚪 Evacuation Guide | Nearest exit + safety protocols per incident type |
-| 🔥 Firebase Sync | Real-time Firestore read/write + anonymous auth |
-| 🌐 Multi-Language | English & Hindi voice keyword detection |
-| 📡 Offline Fallback | Works without API keys using built-in knowledge base |
+* One-tap emergency trigger
+* 📸 Upload incident photo evidence
+* 📍 Auto detect room & floor (mock/logic-based)
+* 🚨 Emergency priority badge (Low / Medium / Critical)
+* 📡 Instant alerts to staff, security & emergency contacts
+
+**Display Output:**
+
+```
+🚨 FIRE EMERGENCY
+Location: Floor 3, Room 307
+Severity: Critical
+Photo Evidence: Attached
+Emergency Contact: Notified
+```
+
+### 🎙️ AI Voice Analysis System
+
+* Speech-to-text (English + Hindi + Hinglish)
+* Emotion/stress detection (AI simulated logic)
+* Confidence scoring for classification
+
+**Output:**
+
+```
+Detected: Fire Emergency
+Confidence: 94%
+Stress Level: High
+Language: Hinglish
+```
+
+### 🗺️ Smart Live Responder Tracking
+
+* Auto nearest responder assignment
+* Route optimization (Leaflet map)
+* Live responder status updates
+* ETA calculation
+
+**Example:**
+
+```
+Assigned Team: Security Alpha
+Distance: 120 meters
+ETA: 38 seconds
+Status: Moving via shortest route
+```
+
+## 🚀 Advanced Features (New Additions)
+
+### 📡 Emergency Contact Notification System
+
+Automatically notifies:
+
+* Family members
+* Hotel Manager
+* Security Team
+
+✔ Family Notified
+✔ Manager Alerted
+✔ Security Dispatched
+
+### 🧠 AI Severity Score Engine
+
+* AI-based risk scoring (0–10)
+* Emergency priority classification
+
+```
+Severity: 9.2/10
+Risk: HIGH
+Recommendation: Immediate Evacuation
+```
+
+### ⏱️ Incident Timeline Tracker
+
+Real-time emergency event tracking:
+
+```
+04:20 SOS Triggered
+04:20 Fire Classified
+04:21 Staff Alerted
+04:22 Responder Assigned
+04:23 Help Arrived
+```
+
+### 📊 Emergency History Module
+
+* Past incident tracking
+* Status history (Resolved / Active)
+
+Examples:
+
+* 🔥 Fire – Resolved
+* 🏥 Medical – Resolved
+* 🚨 Security – Active
+
+### 🏨 Hotel Floor Map System
+
+* Floor-wise visualization
+* Room-level emergency marking
+* Exit route display
+* Responder live position
+
+```
+Floor 3
+Room 307 🔴
+Exit A 🚪
+Exit B 🚪
+Responder 🟢
+```
+
+### ⚠️ Predictive Risk Alert (Highlight Feature)
+
+* Crowd density simulation
+* Risk zone detection
+* Preventive recommendations
+
+```
+⚠️ Risk Alert
+High crowd density detected
+Potential fire hazard
+Recommendation: Inspect Zone A
+```
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology |
-|-------|-----------|
-| Frontend | HTML5, CSS3, Vanilla JavaScript |
-| Backend | Firebase Firestore + Authentication |
-| AI Assistant | Groq API (Llama 3.3 70B Versatile) |
-| Voice | Web Speech API (Chrome built-in) |
-| Maps | Leaflet.js + CartoDB Dark Tiles |
-| Icons | Google Material Icons |
-| Fonts | Inter + JetBrains Mono |
+| Layer     | Technology                          |
+| --------- | ----------------------------------- |
+| Frontend  | HTML5, CSS3, Vanilla JavaScript     |
+| Backend   | Firebase Firestore + Authentication |
+| AI Engine | Groq API (Llama 3.3 70B)            |
+| Voice     | Web Speech API                      |
+| Maps      | Leaflet.js + CartoDB Dark Theme     |
+| UI Style  | Dark Command Center Interface       |
 
 ## 📁 Project Structure
 
 ```
 resqsync-ai/
-├── index.html              # Main entry point
-├── css/
-│   └── style.css           # Dark command center theme
+├── index.html
+├── css/style.css
 ├── js/
-│   ├── firebase-config.js  # Firebase init + Firestore CRUD
-│   ├── data.js             # Data layer + demo incidents
-│   ├── ai-engine.js        # AI classification + Groq API
-│   ├── app.js              # Navigation + map helpers + toast
+│   ├── firebase-config.js
+│   ├── data.js
+│   ├── ai-engine.js
+│   ├── app.js
 │   └── pages/
-│       ├── monitoring.js   # Global Monitoring (command overview)
-│       ├── sos.js          # SOS Panic Button
-│       ├── voice.js        # Voice Detection
-│       ├── tracking.js     # Live Tracking Map
-│       ├── dashboard.js    # Admin Dashboard
-│       ├── assistant.js    # AI Help Assistant
-│       └── analytics.js    # Incident Analytics
-└── data/
-    └── sample_incidents.json
+│       ├── monitoring.js
+│       ├── sos.js
+│       ├── voice.js
+│       ├── tracking.js
+│       ├── dashboard.js
+│       ├── assistant.js
+│       ├── analytics.js
+│       ├── notifications.js
+│       ├── incident-history.js
+│       └── responder-chat.js
+└── data/sample_incidents.json
 ```
 
-## 🚀 Quick Start
+## 🚀 Use Case
 
-### 1. Clone the repo
-```bash
-git clone https://github.com/Tanya-garg10/ResQSync-AI-Smart-Emergency-Response-System-for-Hospitality.git
-cd ResQSync-AI-Smart-Emergency-Response-System-for-Hospitality
-```
+Designed for **hospitality emergency management**, this system demonstrates how AI + real-time tracking + cloud coordination can:
 
-### 2. Add your Groq API Key (free)
-- Go to [console.groq.com/keys](https://console.groq.com/keys) → Create free account → Generate API key
-- Open `js/ai-engine.js` → Paste your key on line 7:
-```js
-const GROQ_API_KEY = 'gsk_your_key_here';
-```
+✔ Reduce response time
+✔ Improve emergency coordination
+✔ Enable predictive safety alerts
+✔ Centralize hotel crisis management
 
-### 3. Run locally
-```bash
-# Any simple HTTP server works:
-python -m http.server 8080
-# OR
-npx serve .
-```
+## ❤️ Build Vision
 
-### 4. Open in browser
-```
-http://localhost:8080
-```
+ResQSync AI transforms emergency handling from:
 
-That's it! The app works immediately with demo data. Firebase and Groq enhance it with real-time sync and AI responses.
+❌ Reactive response
+→
+✔ Smart + Real-time + AI-assisted coordination system
 
-## 🔧 Firebase Setup (Optional)
-
-Firebase is pre-configured. To enable real-time data sync:
-
-1. Go to [Firebase Console](https://console.firebase.google.com) → Project `resqsync-4feea`
-2. **Firestore Database** → Create database → Start in test mode
-3. **Authentication** → Sign-in method → Enable **Anonymous**
-
-Incidents will now save/load from Firestore automatically.
-
-## 📸 Pages Overview
-
-| Page | What it does |
-|------|-------------|
-| 🌐 Global Monitoring | World map + health bars + intel stream + event log |
-| 🆘 SOS Emergency | Big red panic button + evacuation guidance |
-| 🎙️ Voice Detection | Microphone input + keyword detection + AI analysis |
-| 🗺️ Live Tracking | Hotel map + responder markers + route lines |
-| 📊 Dashboard | Metrics + filters + incident table + quick actions |
-| 🤖 AI Assistant | Chat with Groq AI about emergency procedures |
-| 📈 Analytics | Bar charts + line graphs + donut chart + severity bars |
-
-## 🎯 Use Case
-
-Designed for hackathons — shows how AI can reduce emergency response time and improve coordination in hospitality settings.
-
-**Demo-ready:** Works out of the box with zero configuration. Just open `index.html`.
-
-**Build with ❤️**
+**MADE BY TANYA GARG**
