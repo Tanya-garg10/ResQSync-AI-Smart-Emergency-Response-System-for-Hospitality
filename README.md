@@ -171,17 +171,17 @@ resqsync-ai/
 
 Designed for **hospitality emergency management**, this system demonstrates how AI + real-time tracking + cloud coordination can:
 
-✔ Reduce response time
-✔ Improve emergency coordination
-✔ Enable predictive safety alerts
-✔ Centralize hotel crisis management
+- ✔ Reduce response time
+- ✔ Improve emergency coordination
+- ✔ Enable predictive safety alerts
+- ✔ Centralize hotel crisis management
 
 ## ❤️ Build Vision
 
 ResQSync AI transforms emergency handling from:
 
-❌ Reactive response
+- ❌ Reactive response
 →
-✔ Smart + Real-time + AI-assisted coordination system
+- ✔ Smart + Real-time + AI-assisted coordination system
 
 **MADE BY TANYA GARG**
